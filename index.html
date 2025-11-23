@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight Fan Site</title>
+
+    <!-- CSS усередині HTML -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0e0e0e;
+            color: #eee;
+        }
+
+        header {
+            background: #1b1b1b;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #444;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #8ec7ff;
+            text-shadow: 0 0 8px #3fa9ff;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #9cd1ff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff;
+            text-shadow: 0 0 8px #3fa9ff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px #000;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        button {
+            background: #3fa9ff;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #72c1ff;
+            box-shadow: 0 0 10px #3fa9ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hollow Knight Fan Site</h1>
+    </header>
+
+    <nav>
+        <a href="#about">Про гру</a>
+        <a href="#characters">Персонажі</a>
+        <a href="#button">Секрет</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="card">
+            <h2>Про Hollow Knight</h2>
+            <p>
+                Hollow Knight — це атмосферна метроїдванія від студії Team Cherry, що переносить гравця до темного,
+                але чарівного світу Hallownest. Гра відома своєю високою складністю, таємничою історією та
+                красивим візуальним стилем.
+            </p>
+        </section>
+
+        <section id="characters" class="card">
+            <h2>Головні персонажі</h2>
+            <ul>
+                <li>⚔️ The Knight</li>
+                <li>👑 Hornet</li>
+                <li>🕯️ The Pale King</li>
+                <li>🐛 Grubfather</li>
+                <li>💀 The Hollow Knight</li>
+            </ul>
+        </section>
+
+        <section id="button" class="card">
+            <h2>Натисни, якщо смієш...</h2>
+            <button onclick="showSecret()">Відкрити секрет</button>
+            <p id="secretText" style="display:none; margin-top:10px; font-size:1.1rem;">
+                🦋 *Ти сильніший, ніж здається. Навіть у темряві є світло.*  
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        Hollow Knight Fan Site © 2025
+    </footer>
+
+    <!-- JS усередині HTML -->
+    <script>
+        function showSecret() {
+            const text = document.getElementById("secretText");
+            text.style.display = (text.style.display === "none") ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>
